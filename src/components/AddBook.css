@@ -1,0 +1,143 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+.addIMG{
+  width: 100%;
+  margin-top: 80px;
+  
+}
+
+.add-book {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.add-book:hover {
+  transform: translateY(-10px);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #0056b3;
+  margin-bottom: 20px;
+  text-align: center;
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #0056b3;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003d80;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .add-book {
+    max-width: 90%;
+    margin: 30px auto;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  label {
+    font-size: 0.95rem;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .add-book {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 0.85rem;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+}

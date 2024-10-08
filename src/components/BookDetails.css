@@ -1,0 +1,123 @@
+
+.book-details-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+.book-h1-d{
+  margin-top: 100px;
+}
+
+
+.book-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin: 20px 0;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Title and description */
+h1, h2 {
+  font-size: 1.8em;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #555;
+}
+
+p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Reviews section */
+.reviews {
+  margin-top: 20px;
+}
+
+.review {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Star ratings */
+.star {
+  color: #ddd;
+  font-size: 1.5em;
+  margin-right: 5px;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+/* Review Form */
+.review-form {
+  margin-top: 20px;
+}
+
+.review-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  .book-details-page {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  .book-image {
+    max-width: 100%;
+  }
+
+  .review {
+    padding: 10px;
+  }
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.book-details-page {
+  animation: fadeIn 1s ease-in;
+}
+
+.review {
+  animation: fadeIn 0.5s ease;
+}
+
+/* Star hover animation */
+.star:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}

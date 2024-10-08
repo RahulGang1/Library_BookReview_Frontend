@@ -1,0 +1,109 @@
+.app {
+    font-family: Arial, sans-serif;
+  }
+  
+  .app-header {
+    background: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .app-header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .app-header nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .app-header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .book-list {
+    padding: 20px;
+  }
+  
+  .book-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .book-image {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .book-details {
+    flex: 1;
+  }
+  
+  .book-details h2 {
+    margin: 0;
+  }
+  
+  .view-details-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .book-details-page {
+    padding: 20px;
+  }
+  
+  .like-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .reviews {
+    margin-top: 20px;
+  }
+  
+  .review {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .add-book {
+    padding: 20px;
+  }
+  
+  .add-book form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-book label {
+    margin: 10px 0;
+  }
+  
+  .review-form {
+    padding: 20px;
+  }
+  
+  .review-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .review-form label {
+    margin: 10px 0;
+  }
+  
