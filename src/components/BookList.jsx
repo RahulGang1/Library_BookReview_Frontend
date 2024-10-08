@@ -8,7 +8,7 @@ function BookList() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    fetch(`http://localhost:3000/api/books?search=${search}`)
+    fetch(`https://library-project-backend-s5cx.onrender.com/api/books?search=${search}`)
       .then(response => response.json())
       .then(data => setBooks(data))
       .catch(error => console.error('Error fetching books:', error));

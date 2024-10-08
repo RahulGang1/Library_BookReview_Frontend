@@ -6,7 +6,7 @@ const AllReviews = () => {
 
   useEffect(() => {
    
-    fetch('http://localhost:3000/api/books')
+    fetch('https://library-project-backend-s5cx.onrender.com/api/books')
       .then(response => response.json())
       .then(data => setBooks(data))
       .catch(error => console.error('Error fetching all books:', error));

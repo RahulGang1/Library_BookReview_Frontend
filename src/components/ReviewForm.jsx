@@ -10,7 +10,7 @@ const ReviewForm = ({ bookId, onNewReview }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch(`http://localhost:3000/api/books/${bookId}/reviews`, {
+    fetch(`https://library-project-backend-s5cx.onrender.com/api/books/${bookId}/reviews`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ rating, comment }),

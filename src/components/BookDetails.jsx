@@ -11,7 +11,7 @@ const BookDetails = () => {
 
   useEffect(() => {
     // Fetch book details and reviews
-    fetch(`http://localhost:3000/api/books/${id}`)
+    fetch(`https://library-project-backend-s5cx.onrender.com/api/books/${id}`)
       .then(response => response.json())
       .then(data => {
         setBook(data);

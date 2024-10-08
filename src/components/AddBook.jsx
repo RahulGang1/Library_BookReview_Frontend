@@ -10,7 +10,7 @@ const AddBook = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch('http://localhost:3000/api/books', {
+    fetch('https://library-project-backend-s5cx.onrender.com/api/books', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ title, author, description, imageUrl }),
